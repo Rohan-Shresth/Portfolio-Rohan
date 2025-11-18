@@ -1,11 +1,110 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rohan Shrestha — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="profile-box">
+        <img src="C:\Users\PREDTAOR\Pictures\Saved Pictures\Doraemon_character.png" alt="Rohan Shrestha profile photo" class="profile-img">
+        <h1 class="site-title">Rohan Shrestha</h1>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Rohan — a student developer passionate about web development, UI/UX,
+        and game creation. I enjoy building clean, functional, and visually appealing projects.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+
+      <!-- Dummy Project Cards -->
+      <article class="project">
+        <h3>Weather Web App</h3>
+        <p>A clean and simple weather dashboard using OpenWeatherMap API.</p>
+        <a href="#">View Project →</a>
+      </article>
+
+      <article class="project">
+        <h3>FPS Parkour City Tour</h3>
+        <p>A Unity FPS-style parkour experience blending game mechanics with exploration.</p>
+        <a href="#">View Project →</a>
+      </article>
+
+      <article class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
+        <a href="#">View Project →</a>
+      </article>
+
+      <article class="project">
+        <h3>To-Do App</h3>
+        <p>Minimal and fast to-do list web app with localStorage persistence.</p>
+        <a href="#">View Project →</a>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Want to collaborate or ask a question? Send a message.</p>
+
+      <form class="contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Rohan Shrestha — All Rights Reserved</small>
+    </div>
+  </footer>
+
+  <script>
+    // Auto update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>

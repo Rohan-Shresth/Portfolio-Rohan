@@ -1,0 +1,157 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f2f5f9;
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0f4c5c;
+}
+
+.site-title {
+  color: #0f4c5c;
+  font-size: 1.35rem;
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  color: #0f4c5c;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  background: #0f4c5c;
+  color: white;
+}
+
+/* Section Titles */
+h2 {
+  margin-bottom: 1rem;
+  color: #0e3d4c;
+  font-size: 1.9rem;
+}
+
+/* Projects */
+.project {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.project a {
+  color: #0f4c5c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project a:hover {
+  color: #08333f;
+}
+
+/* Contact Form */
+.contact-form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: max-content;
+  padding: 0.6rem 1.1rem;
+  background: #0f4c5c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #08333f;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
