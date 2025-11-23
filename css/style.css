@@ -1,4 +1,4 @@
-/* Reset */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -7,14 +7,12 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
 .container {
   max-width: 1000px;
   margin: auto;
   padding: 2rem;
 }
 
-/* Header */
 .site-header {
   background: #ffffff;
   border-bottom: 1px solid #ddd;
@@ -131,7 +129,6 @@ button:hover {
   transform: translateY(-3px);
 }
 
-/* Footer */
 .site-footer {
   text-align: center;
   padding: 1.2rem;
@@ -139,7 +136,6 @@ button:hover {
   border-top: 1px solid #ddd;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
