@@ -1,103 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rohan Shrestha — Portfolio</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico">
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="profile-box">
-        <img src="C:\Users\PREDTAOR\Pictures\Saved Pictures\Doraemon_character.png" alt="Rohan Shrestha profile photo" class="profile-img">
-        <h1 class="site-title">Rohan Shrestha</h1>
-      </div>
+<header id="hero">
 
-      <nav class="main-nav" aria-label="Primary navigation">
-        <ul>
+  <img id="gif-background" src="C:\Users\PREDTAOR\Desktop\portfolio-Rohan shrestha\media\Deal Or No Deal Numbers GIF by Lucas and Friends by RV AppStudios.gif" alt="Background animation">
+
+  <nav class="navbar">
+      <span class="logo">Rohan</span>
+
+      <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      </ul>
 
-  <main>
+      <button class="menu-toggle" id="menu-button" aria-expanded="false">☰</button>
+  </nav>
 
-    <section id="about" class="about container">
-      <h2>About Me</h2>
-      <p>
-        Hi! I'm Rohan — a student developer passionate about web development, UI/UX,
-        and game creation. I enjoy building clean, functional, and visually appealing projects.
-      </p>
-    </section>
+  <div class="hero-content">
+      <h1>Rohan Shrestha</h1>
+      <p>HELLO!!</p>
+  </div>
 
-    <section id="projects" class="projects container">
-      <h2>Projects</h2>
+</header>
 
-      <article class="project">
-        <h3>Weather Web App</h3>
-        <p>A clean and simple weather dashboard using OpenWeatherMap API.</p>
-        <a href="">View Project →</a>
-      </article>
+<main>
 
-      <article class="project">
-        <h3>FPS Parkour City Tour</h3>
-        <p>A Unity FPS-style parkour experience blending game mechanics with exploration.</p>
-        <a href="">View Project →</a>
-      </article>
+<section id="about" class="container">
+  <h2>About Me</h2>
+  <p>Hi! I'm Rohan — a student developer passionate about web development, UI/UX,
+  and game creation.</p>
+</section>
 
-      <article class="project">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
-        <a href="">View Project →</a>
-      </article>
+<section id="projects" class="container">
+  <h2>Projects</h2>
 
-      <article class="project">
-        <h3>To-Do App</h3>
-        <p>Minimal and fast to-do list web app with localStorage persistence.</p>
-        <a href="">View Project →</a>
-      </article>
-    </section>
+  <div id="projects-grid">
 
-    <section id="contact" class="contact container">
-      <h2>Contact</h2>
-      <p>Want to collaborate or ask a question? Send a message.</p>
+      <div class="project-card">
+          <h3>Weather Web App</h3>
+          <p>A simple weather app using OpenWeather API.</p>
+      </div>
 
-      <form class="contact-form" aria-label="Contact form">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
+      <div class="project-card">
+          <h3>FPS Parkour City Tour</h3>
+          <p>A Unity FPS parkour experience.</p>
+      </div>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+      <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive website built with HTML, CSS & JS.</p>
+      </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
+      <div class="project-card">
+          <h3>To-Do App</h3>
+          <p>Clean and fast to-do list with localStorage.</p>
+      </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+  </div>
+</section>
 
-  </main>
+<section id="contact" class="container">
+  <h2>Contact</h2>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> Rohan Shrestha — All Rights Reserved</small>
-    </div>
-  </footer>
+  <form id="contact-form">
+      <label>Name</label>
+      <input type="text" id="name" required>
 
-  <script>
-   
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Message</label>
+      <textarea id="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+  </form>
+
+  <div id="form-message"></div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Rohan Shrestha — All Rights Reserved</p>
+</footer>
+
+<script src="js/script3.js"></script>
 
 </body>
 </html>
